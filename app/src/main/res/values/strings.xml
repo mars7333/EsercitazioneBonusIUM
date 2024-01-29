@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Esercitazione2v2</string>
+    <string name="activity_form_title">Libretto Universitario</string>
+    <string name="login">Login</string>
+    <string name="registrati"><u>Registrati</u></string>  //stringa sottolineata
+    <string name="registrati_button">Registrati</string>
+    <string name="registrazione">Registrazione</string>
+    <string name="non_registrato">Non sei ancora registrato?</string>
+    <string name="error">ERRORE!</string>
+    <string name="name">Nome:</string>
+    <string name="name_hint">es.: Mario</string>
+    <string name="surname">Cognome:</string>
+    <string name="surname_hint">es.: Rossi</string>
+    <string name="password">Password:</string>
+    <string name="password_repeat">Ripeti la password:</string>
+    <string name="password_hint">es.: Xhfkdi56!</string>
+    <string name="password_rules">La password deve contenere almeno: 8 caratteri, un numero e un carattere speciale(@#$%^+=)</string>
+    <string name="birthdate">Data di nascita:</string>
+    <string name="birthdate_hint">es. 01/01/1995</string>
+    <string name="address">Indirizzo:</string>
+    <string name="address_hint">es. Via dei Boschi n. 183:</string>
+    <string name="age">Età: </string>
+    <string name="min">0</string>
+    <string name="max">100</string>
+    <string name="insert">Inserisci</string>
+    <string name="activity_result_title">Dati inseriti</string>
+    <string name="profile">Il tuo profilo</string>
+    <string name="ok">OK</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="navigation_drawer_open">Apri menu</string>
+    <string name="navigation_drawer_close">Chiudi menu</string>
+    <string name="media_ar">Media aritmetica</string>
+    <string name="media_po">Media ponderata</string>
+    <string name="voto_laurea">Voto di laurea</string>
+    <string name="aggiungi_esame">Inserisci i dati dell esame</string>
+    <string name="exam_name">Nome esame:</string>
+    <string name="exam_hint">Es.: Interazione Uomo Macchina</string>
+    <string name="voto">Voto:</string>
+    <string name="voto_hint">Es.:27</string>
+    <string name="cfu">CFU:</string>
+    <string name="cfu_hint">Es.:9</string>
+    <string name="aggiungi">Aggiungi</string>
+</resources>

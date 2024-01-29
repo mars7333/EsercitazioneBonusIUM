@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <include
+        android:id="@+id/include_layout_topbar"
+        layout="@layout/activity_top_base"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text_background"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_blue"
+                android:gravity="center_horizontal"
+                android:text="@string/registrazione"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:hint="@string/name_hint"
+                android:padding="6pt"/>
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="@string/error"
+                android:textSize="28sp"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/surname"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:hint="@string/surname_hint"
+                android:padding="6pt"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/birthdate"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="@string/birthdate_hint"
+                    android:padding="6pt"
+                    android:inputType="none"
+                    android:clickable="true"
+                    android:focusable="false" />
+
+                <ImageView
+                    android:id="@+id/datePickerButton"
+                    android:layout_width="24pt"
+                    android:layout_height="24pt"
+                    android:padding="6pt"
+                    android:src="@drawable/calendar_icon"
+                    android:contentDescription="Calendario"
+                    android:layout_gravity="end|center"/>
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="20dp"
+                    android:hint="@string/password_hint"
+                    android:padding="6pt"/>
+
+                <ImageView
+                    android:id="@+id/show_password"
+                    android:layout_width="24pt"
+                    android:layout_height="24pt"
+                    android:padding="6pt"
+                    android:src="@drawable/view_password"
+                    android:contentDescription="mostra password"
+                    android:layout_gravity="end|center"/>
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_repeat"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/repeat_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                android:hint="@string/password_hint"
+                android:padding="6pt"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5pt"/>
+
+            <TextView
+                android:id="@+id/error2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/error"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/dark_blue"
+                android:gravity="center"
+                android:text="@string/registrati_button"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:padding="7dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

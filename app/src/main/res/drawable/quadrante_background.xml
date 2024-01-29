@@ -1,0 +1,5 @@
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="7pt" /> <!-- Imposta il raggio per ottenere gli angoli smussati -->
+    <solid android:color="@color/grey" /> <!-- Colore di sfondo -->
+</shape>
